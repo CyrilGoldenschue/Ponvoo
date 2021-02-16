@@ -2,3 +2,8 @@
 ponvoo/package-lock.json
 
 .idea/workspace.xml
+
+.idea/
+
+package-lock.json
+/node_modules/
