@@ -1,4 +1,5 @@
 <template>
+  <Layout/>
 
   <div class="row">
     <div class="col-md-6">
@@ -11,14 +12,16 @@
 </template>
 
 <script>
-import Image from '../components/Login/Image.vue'
-import FormLogin from '../components/Login/Form.vue'
+import Image from '../components/Login/Image.vue';
+import FormLogin from '../components/Login/Form.vue';
+import Layout from '../components/Layout.vue';
 
 export default {
   name: 'Login',
   components: {
     Image,
-    FormLogin
+    FormLogin,
+    Layout
   }
 }
 </script>
