@@ -2,12 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 
-import '../public/assets/css/owl.carousel.min.css'
-import '../public/assets/font/icomoon/style.css'
+import './assets/css/owl.carousel.min.css'
+import './assets/font/icomoon/style.css'
 
-import '../public/assets/css/bootstrap.min.css'
+import './assets/css/bootstrap.min.css'
 
-import '../public/assets/css/style.css'
+import './assets/css/style.css'
 
 
 
