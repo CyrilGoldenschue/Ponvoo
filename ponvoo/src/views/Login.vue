@@ -1,6 +1,5 @@
 <template>
   <Layout/>
-
   <div class="row">
     <div class="col-md-6">
       <Image/>
