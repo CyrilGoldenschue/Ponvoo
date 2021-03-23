@@ -1,12 +1,14 @@
 <template>
   <Layout/>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <Image/>
+        </div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <Image/>
-    </div>
-    <div class="col-md-6 contents">
-      <FormLogin/>
+        <FormLogin/>
+      </div>
     </div>
   </div>
 </template>
