@@ -1,5 +1,4 @@
 <template>
-  <Layout/>
   <div class="content">
     <div class="container">
       <div class="row">
@@ -14,13 +13,11 @@
 
 <script>
 import FormLogin from '../components/Login/Form.vue';
-import Layout from '../components/Layout.vue';
 
 export default {
   name: 'Login',
   components: {
-    FormLogin,
-    Layout
+    FormLogin
   }
 }
 </script>
