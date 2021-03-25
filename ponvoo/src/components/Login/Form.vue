@@ -6,7 +6,7 @@
         <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
       </div>
 
-      <form action="#" method="post">
+      <form action="#" method="post" @change="onChange()">
         <div class="form-group first">
           <input type="email" class="form-control" id="username" placeholder="Username" required>
         </div>
@@ -43,8 +43,31 @@
   </div>
 </template>
 
+<script>
+export default {
+  methods: {
+    onChange() {
+        const test = document.getElementById("username")
+        console.log(test.value)
+        console.log(test)
+
+        if(test.validity.typeMismatch){
+          console.log('Input is not valid type');
+        }else{
+          console.log('Input is valid type');
+        }
+
+        console.log("Change-dance-Chance :D")
+
+    }
+  }
+}
+</script>
+
+
 <style>
   .icons-alignement{
     margin: 0px 10px;
   }
 </style>
+
