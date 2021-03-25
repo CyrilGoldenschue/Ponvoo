@@ -50,26 +50,19 @@ export default {
         const username = document.getElementById("username")
         const password = document.getElementById("password")
         const button = document.getElementById("button")
-        var inputsAreValid = true
 
-        //Check if the username or the password are not valid or empty.
-        //If it's not the case then 'inputsAreValid' switch to false
-
-        if((username.validity.typeMismatch) || (username.value === ""))
-          inputsAreValid = false
-
-        if((password.validity.typeMismatch) || (password.value === ""))
-          inputsAreValid = false
-
-        if(inputsAreValid){
-          console.log("Whoaw ! ur valide")
+        //Check if the username or the password are valid.
+        //If it's case then the style's button switches to its normal state. 
+        if((this.isImputValid(username)) && (this.isImputValid(password)))
           button.disabled = false;
-        }
-        else{
+        else
           button.disabled = true;
-          console.log("Eh. I'm sorry ur'not valid")
-
-        }
+    },
+    isImputValid(input){
+      if((input.validity.typeMismatch) || (input.value === ""))
+        return false
+      else
+        return true
     }
   }
 }
