@@ -8,14 +8,11 @@
 
       <form action="#" method="post">
         <div class="form-group first">
-          <label for="username">Username</label>
-          <input type="text" class="form-control" id="username">
-
+          <input type="email" class="form-control" id="username" placeholder="Username" required>
         </div>
-        <div class="form-group last mb-4">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password">
 
+        <div class="form-group last mb-4">
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
         </div>
 
         <div class="d-flex mb-5 align-items-center">
@@ -31,17 +28,23 @@
         <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
 
         <div class="social-login">
-          <a href="#" class="facebook">
-            <span class="icon-facebook mr-3"></span>
+          <a href="#" class="facebook icons-alignement">
+            <span class="icon-facebook"></span>
           </a>
-          <a href="#" class="twitter">
-            <span class="icon-twitter mr-3"></span>
+          <a href="#" class="twitter icons-alignement">
+            <span class="icon-twitter"></span>
           </a>
-          <a href="#" class="google">
-            <span class="icon-google mr-3"></span>
+          <a href="#" class="google icons-alignement">
+            <span class="icon-google"></span>
           </a>
         </div>
       </form>
     </div>
   </div>
 </template>
+
+<style>
+  .icons-alignement{
+    margin: 0px 10px;
+  }
+</style>
