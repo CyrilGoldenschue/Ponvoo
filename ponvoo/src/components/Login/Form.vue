@@ -23,7 +23,7 @@
           <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
         </div>
 
-        <input type="submit" value="Log In" class="btn btn-block btn-primary">
+        <input type="submit" value="Log In" id="button" class="btn btn-block btn-primary" disabled>
 
         <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
 
@@ -47,18 +47,29 @@
 export default {
   methods: {
     onChange() {
-        const test = document.getElementById("username")
-        console.log(test.value)
-        console.log(test)
+        const username = document.getElementById("username")
+        const password = document.getElementById("password")
+        const button = document.getElementById("button")
+        var inputsAreValid = true
 
-        if(test.validity.typeMismatch){
-          console.log('Input is not valid type');
-        }else{
-          console.log('Input is valid type');
+        //Check if the username or the password are not valid or empty.
+        //If it's not the case then 'inputsAreValid' switch to false
+
+        if((username.validity.typeMismatch) || (username.value === ""))
+          inputsAreValid = false
+
+        if((password.validity.typeMismatch) || (password.value === ""))
+          inputsAreValid = false
+
+        if(inputsAreValid){
+          console.log("Whoaw ! ur valide")
+          button.disabled = false;
         }
+        else{
+          button.disabled = true;
+          console.log("Eh. I'm sorry ur'not valid")
 
-        console.log("Change-dance-Chance :D")
-
+        }
     }
   }
 }
