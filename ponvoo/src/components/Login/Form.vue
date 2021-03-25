@@ -2,7 +2,7 @@
   <div class="col-md-6 contents">
     <div class="row justify-content-center">
       <div class="mb-4">
-        <h3>Sign In</h3>
+        <h2>Sign In</h2>
         <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
       </div>
 

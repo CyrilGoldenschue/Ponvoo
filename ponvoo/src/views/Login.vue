@@ -6,7 +6,6 @@
         <div class="col-md-6">
           <Image/>
         </div>
-
         <FormLogin/>
       </div>
     </div>
