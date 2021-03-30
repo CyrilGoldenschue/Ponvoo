@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import Login from '../src/views/Login.vue'
+import Login from '@/views/Login.vue'
 
 const wrapper = mount(Login)
 
