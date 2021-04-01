@@ -1,0 +1,26 @@
+<template>
+  <Header/>
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="../assets/img/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+  <Footer/>
+</template>
+
+<script>
+import Header from '../components/Header.vue';
+import Footer from '../components/Footer.vue';
+
+export default {
+  name: 'Home',
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
