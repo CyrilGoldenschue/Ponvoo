@@ -23,7 +23,7 @@
           <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
         </div>
 
-        <input type="submit" value="Log In" id="button" class="btn btn-block btn-primary muted">
+        <input type="submit" value="Log In" id="button" class="btn btn-block btn-primary muted"/>
 
         <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
 

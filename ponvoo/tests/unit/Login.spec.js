@@ -24,8 +24,6 @@ test('submits a form', async () => {
 
     //then
     expect(wrapper.contains(
-        <button type="submit" disabled={false}>
-            Sign up
-        </button>
+        <input type="submit" value="Log In" id="button" class="btn btn-block btn-primary"/>
     )).to.equal(true);
 })
