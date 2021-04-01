@@ -10,9 +10,9 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/cli-plugin-unit-jest": "^4.5.12",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-jest": "^5.0.0-alpha.7",
     "vue-router": "^4.0.5",
     "vueify": "^5.0.2"
   },
